@@ -1,3 +1,4 @@
 <h1>Random Meal List</h1>
-<div *ngFor="let meal of meals">Category: {{ meal.strMeal }}</div>
-<!-- <p>Category: {{ meals | json }}</p> -->
+<div *ngFor="let api of apiResponse.meals">
+  Ingredients: {{ api.strIngredient }}
+</div>
