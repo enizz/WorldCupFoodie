@@ -54,6 +54,11 @@ export interface Meal {
       dateModified?: any;
   }
 
+  export interface RootObject {
+    meals: Meal[];
+}
+
+
 
 
 

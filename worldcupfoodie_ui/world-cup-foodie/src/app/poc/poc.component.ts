@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Meal } from '../interface/world-cup-foodie';
+import { Meal, RootObject } from '../interface/world-cup-foodie';
 import { WorldCupFoodieService } from '../world-cup-foodie.service';
 
 @Component({
@@ -9,7 +9,9 @@ import { WorldCupFoodieService } from '../world-cup-foodie.service';
 })
 export class PocComponent implements OnInit {
 
-  meal: Meal[] = [];
+  meals: RootObject = {
+    meals: []
+  };
 
   constructor(private service: WorldCupFoodieService) { }
 
@@ -18,6 +20,6 @@ export class PocComponent implements OnInit {
   }
 
   loadMeals = (): void => {
-    this.service.getMeals().subscribe((data: Meal[]) => this.meal = data);
+    this.service.getMeals().subscribe((data: RootObject) => this.meals = data);
   }
 }
