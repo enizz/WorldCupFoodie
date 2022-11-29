@@ -75,12 +75,13 @@ namespace WorldCupFoodie.Controllers
         // POST: api/GroceryLists
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<GroceryList>> PostGroceryList(GroceryList groceryList)
+        public async Task<ActionResult<GroceryListPost>> PostGroceryList(GroceryListPost groceryList)
         {
-            _context.GroceryLists.Add(groceryList);
+            var gl = new GroceryList { Id = groceryList.Id, Ingredients = groceryList.Ingredients, MatchId = groceryList.MatchId};
+            _context.GroceryLists.Add(gl);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetGroceryList", new { id = groceryList.Id }, groceryList);
+            return CreatedAtAction("GetGroceryList", new { id = gl.Id }, gl);
         }
 
         // DELETE: api/GroceryLists/5
