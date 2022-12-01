@@ -1,4 +1,20 @@
-<h1>Random Meal List</h1>
-<div *ngFor="let api of apiResponse.meals">
-  Ingredients: {{ api.strIngredient }}
+<h1>Start adding to your grocery list!</h1>
+<div class="dropdown-container">
+  <form novalidate [formGroup]="filterForm" (input)="onInputChange()">
+  <input type="text" formControlName="filter">
+  </form>
+  <div class="list-container" *ngIf="dropdownFlag">
+    <ul class="ingredients-list">
+      <li *ngFor="let meal of apiResponse.meals | dropdownFilter: filterForm.get('filter')?.value" (click)="selectOption(meal.strIngredient)">{{meal.strIngredient}}</li>
+    </ul>
+  </div>
 </div>
+<h4>Your selected ingredients</h4>
+<ul>
+  <li *ngFor="let selectedIngredient of selectedIngredients">
+    {{selectedIngredient}}
+  </li>
+</ul>
+<!-- <div *ngFor="let api of apiResponse.meals">
+  Ingredients: {{ api.strIngredient }}
+</div> -->
