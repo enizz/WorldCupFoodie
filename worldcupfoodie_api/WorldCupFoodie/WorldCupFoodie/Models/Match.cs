@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WorldCupFoodie.Models;
-
-public partial class Match
+namespace WorldCupFoodie.Models
 {
-    public int Id { get; set; }
+    public partial class Match
+    {
+        public Match()
+        {
+            Dishes = new HashSet<Dish>();
+        }
 
-    public string? Team1 { get; set; }
+        public int Id { get; set; }
+        public string? Team1 { get; set; }
+        public string? Team2 { get; set; }
+        public DateTime? MatchDate { get; set; }
 
-    public string? Team2 { get; set; }
-
-    public DateTime? MatchDate { get; set; }
-
-    public virtual ICollection<GroceryList> GroceryLists { get; } = new List<GroceryList>();
+        public virtual ICollection<Dish> Dishes { get; set; }
+    }
 }
