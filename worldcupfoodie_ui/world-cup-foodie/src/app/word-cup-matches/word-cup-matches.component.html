@@ -1,0 +1,76 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<!-- <table>
+<thead>
+    <tr>
+      <th scope="col">Team 1</th>
+      <th scope="col">Team 2</th>
+      <th scope="col">Match Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let match of allMatches">
+        <td><img src="https://www.sciencekids.co.nz/images/pictures/flags680/{{match.team1}}.jpg	" alt="Girl in a jacket" width="100" height="100"></td>
+      <td>{{ match.team1 }}</td>
+      <td><img src="https://www.sciencekids.co.nz/images/pictures/flags680/{{ match.team2}}.jpg	" alt="Girl in a jacket" width="100" height="100"></td>
+
+      <td>{{ match.team2}}</td>
+      <td> <button><a [routerLink]="['/poc']" [routerLinkActive]="['link-active']">
+        Edit Match</a>
+       </button> </td>
+      <td>{{ match.matchDate }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+
+<div class="d-flex justify-content-center" *ngFor="let match of allMatches">
+    <span>    <img src="https://www.sciencekids.co.nz/images/pictures/flags680/{{match.team1}}.jpg	" alt="{{match.team1}} Flag" width="100" height="100">
+   <br> 
+ <p>{{ match.team1 }}</p> 
+    </span>
+
+    <div class="center-match-info">
+        <p>VS</p> 
+        <button>
+        <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
+          >Create Grocery List</a>
+                </button> 
+                <p>{{ match.matchDate }}</p>
+
+            </div>
+            
+    <span>    <img src="https://www.sciencekids.co.nz/images/pictures/flags680/{{match.team2}}.jpg	" alt="{{match.team2}} Flag" width="100" height="100">
+        <p>{{ match.team2 }}</p> 
+
+    </span>
+ 
+
+
+
+            
+
+</div>
+<!-- <td>VS <br>{{ match.matchDate }}</td>
+<button>
+
+    <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
+      >World Cup Matches</a>
+            </button> -->
+
+<!-- 
+<h1>TE AMO LAURA  <br>-EDUARDO</h1>
+<img src="https://www.sciencekids.co.nz/images/pictures/flags680/Mexico.jpg	" alt="Girl in a jacket" width="100" height="100">
+<img src="https://www.sciencekids.co.nz/images/pictures/flags680/United_States.jpg	" alt="Girl in a jacket" width="100" height="100">
+ -->
+
+
+
+ 
+    <!-- <hr>
+   <button>
+        <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
+          >World Cup Matches</a>
+                </button>
+       -->
+  

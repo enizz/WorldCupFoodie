@@ -25,6 +25,12 @@
     {{ selectedIngredient }}
   </li>
 </ul>
+
+<hr>
+<button>
+  <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
+    >Go Back to World Cup Matches</a>
+          </button>
 <!-- <div *ngFor="let api of apiResponse.meals">
   Ingredients: {{ api.strIngredient }}
 </div> -->
