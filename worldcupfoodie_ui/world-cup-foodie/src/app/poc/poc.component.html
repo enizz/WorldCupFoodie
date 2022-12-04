@@ -23,8 +23,8 @@
 <h4>Your selected ingredients are below</h4>
 
 <ul>
-  <li *ngFor="let selectedIngredient of selectedIngredients">
-    {{ selectedIngredient }}
+  <li *ngFor="let selectedIngredient of selectedIngredients; let i = index">
+    {{ selectedIngredient }} <button (click)="deselectOption(i)">Remove</button>
   </li>
 </ul>
 

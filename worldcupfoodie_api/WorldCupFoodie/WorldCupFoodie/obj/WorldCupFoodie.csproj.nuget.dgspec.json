@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/eduardogarcia/Documents/Angular/WorldCupFoodie/worldcupfoodie_api/WorldCupFoodie/WorldCupFoodie/WorldCupFoodie.csproj": {}
+    "C:\\AHBC\\Projects\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj": {}
   },
   "projects": {
-    "/Users/eduardogarcia/Documents/Angular/WorldCupFoodie/worldcupfoodie_api/WorldCupFoodie/WorldCupFoodie/WorldCupFoodie.csproj": {
+    "C:\\AHBC\\Projects\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/eduardogarcia/Documents/Angular/WorldCupFoodie/worldcupfoodie_api/WorldCupFoodie/WorldCupFoodie/WorldCupFoodie.csproj",
+        "projectUniqueName": "C:\\AHBC\\Projects\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj",
         "projectName": "WorldCupFoodie",
-        "projectPath": "/Users/eduardogarcia/Documents/Angular/WorldCupFoodie/worldcupfoodie_api/WorldCupFoodie/WorldCupFoodie/WorldCupFoodie.csproj",
-        "packagesPath": "/Users/eduardogarcia/.nuget/packages/",
-        "outputPath": "/Users/eduardogarcia/Documents/Angular/WorldCupFoodie/worldcupfoodie_api/WorldCupFoodie/WorldCupFoodie/obj/",
+        "projectPath": "C:\\AHBC\\Projects\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj",
+        "packagesPath": "C:\\Users\\eugen\\.nuget\\packages\\",
+        "outputPath": "C:\\AHBC\\Projects\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/eduardogarcia/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\eugen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
