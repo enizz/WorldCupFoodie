@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Router, RouterModule, Routes } from '@angular/router';
 import { PocComponent } from './poc/poc.component';
 import { WordCupMatchesComponent } from './word-cup-matches/word-cup-matches.component';
+import { MatchChosenComponent } from './match-chosen/match-chosen.component';
 const routes: Routes = [
   {path:'poc',component:PocComponent},
   {path:'world-cup-matches',component:WordCupMatchesComponent},
+  {path:'match-chosen',component:WordCupMatchesComponent},
 
   {path:'',component:WordCupMatchesComponent,pathMatch:'full'}
 

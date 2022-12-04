@@ -7,6 +7,7 @@ import { PocComponent } from './poc/poc.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DropdownFilterPipe } from './filters/dropdown-filter.pipe';
 import { WordCupMatchesComponent } from './word-cup-matches/word-cup-matches.component';
+import { MatchChosenComponent } from './match-chosen/match-chosen.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { WordCupMatchesComponent } from './word-cup-matches/word-cup-matches.com
     PocComponent,
     PocComponent,
     DropdownFilterPipe,
-    WordCupMatchesComponent
+    WordCupMatchesComponent,
+    MatchChosenComponent
   ],
   imports: [
     BrowserModule,
