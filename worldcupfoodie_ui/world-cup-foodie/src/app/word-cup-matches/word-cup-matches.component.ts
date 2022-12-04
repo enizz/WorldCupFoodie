@@ -9,11 +9,18 @@ import { WorldCupMatchInfo } from '../world-cup-match-info';
 export class WordCupMatchesComponent implements OnInit {
   allMatches: WorldCupMatchInfo[] = [];
 
-  constructor(private worldCupMatches: WorldCupMatchesService) { }
+  // constructor(private worldCupMatches: WorldCupMatchesService) { }
+
+  // ngOnInit(): void {
+  //   this.allMatches = this.worldCupMatches.getAllMatches();
+
+  // }
+  constructor(private service: WorldCupMatchesService) { }
 
   ngOnInit(): void {
-    this.allMatches = this.worldCupMatches.getAllMatches();
+  this.service.getAllMatches().subscribe((data:WorldCupMatchInfo[])=>this.allMatches=data);
 
   }
 
+  
 }
