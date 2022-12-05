@@ -46,7 +46,7 @@ export class PocComponent implements OnInit {
    }
   }
   public deselectOption(mealId: number): void {
-    this.selectedIngredients.splice(mealId,)
+    this.selectedIngredients.splice(mealId, 1)
   }
 
 }
