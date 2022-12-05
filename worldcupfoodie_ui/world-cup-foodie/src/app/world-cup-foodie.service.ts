@@ -8,7 +8,7 @@ import { Meal, RootObject } from './interface/world-cup-foodie';
   providedIn: 'root'
 })
 export class WorldCupFoodieService {
-
+  public selectedIngredients: string[]=[];
   constructor(private httpClient: HttpClient) { }
 
   getMeals = (): Observable<RootObject> => {

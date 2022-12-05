@@ -1,3 +1,5 @@
+<app-match-chosen></app-match-chosen>
+
 <h1>Start adding to your grocery list!</h1>
 <div class="dropdown-container">
   <form novalidate [formGroup]="filterForm" (input)="onInputChange()">
@@ -21,10 +23,19 @@
 <h4>Your selected ingredients are below</h4>
 
 <ul>
-  <li *ngFor="let selectedIngredient of selectedIngredients">
-    {{ selectedIngredient }}
+  <li *ngFor="let selectedIngredient of selectedIngredients; let i = index">
+    {{ selectedIngredient }} <button (click)="deselectOption(i)">Remove</button>
   </li>
 </ul>
+
+<hr>
+<button><a [routerLink]="['/grocerylist']" [routerLinkActive]="['link-active']">Submit grocery list</a></button>
+<button>
+  <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
+    >Go Back to World Cup Matches</a>
+          </button>
+
+          
 <!-- <div *ngFor="let api of apiResponse.meals">
   Ingredients: {{ api.strIngredient }}
 </div> -->
