@@ -5,4 +5,10 @@
     <footer>
         <p>WorldCupFoodie ⓒ</p>
      </footer> -->
-     test
+     
+     <div *ngFor="let sI of selectedIngredients, index as i">{{i + 1}} {{sI}}</div>
+     <hr>
+     <button>
+        <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
+          >Go Back to World Cup Matches</a>
+                </button>

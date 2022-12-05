@@ -13,7 +13,8 @@ export class PocComponent implements OnInit {
   apiResponse: RootObject = {
     meals: []
   };
-  public selectedIngredients: string[]=[];
+  // public selectedIngredients: string[]=[];
+  selectedIngredients = this.service.selectedIngredients
   public dropdownFlag: boolean = false;
   public filterForm: FormGroup = this.fb.group({
 		filter: ['', Validators.required],

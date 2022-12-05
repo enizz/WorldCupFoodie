@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0Bmhm0uBqrzTurPLx5y3b4P2rz2QYn67zLB8u74EBld0uOwe25erijP4NCpkWnj2ZyG9yJwvLL5en0K3MIiIDQ==",
+  "dgSpecHash": "BpjXkWHnWPeTntBMszj1D74uf41oGLSBi1d7XKutCmmIroSdg2GU9YtnSOusHUNo8029hQGp2l+kzp4+OuabrQ==",
   "success": true,
-  "projectFilePath": "C:\\AHBC\\Projects\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj",
+  "projectFilePath": "C:\\Users\\eugen\\source\\repos\\FSTEST\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eugen\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\eugen\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
