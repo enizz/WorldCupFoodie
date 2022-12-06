@@ -6,3 +6,52 @@ footer{
     color: white;
     background-color: brown;
 }
+/* Customize the label (the container) */
+.container {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #333;
+  font-size: 18px;
+  }
+/* Create a custom checkbox - using ::before */
+.checkmark::before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: solid 2px #194263;
+  position: absolute;
+  left:0;
+  top:0;
+  margin-right: 10px;
+  }
+  /* Show the checkmark when checked */
+  .container input:checked~.checkmark:after {
+  display: block;
+  left: 9px;
+  top: 5px;
+  width: 8px;
+  height: 14px;
+  border: solid #194263;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  margin-right: 10px;
+  }
+  /* strike through the text */
+  .container input:checked ~ input {
+    text-decoration: line-through
+  }
+.flex {
+  display: flex;
+}
+.mr {
+  margin-right: 1em;
+}
+ /* Hide the browser's default checkbox */
+ .container input[type="checkbox"] {
+  display: none
+  }
