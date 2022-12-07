@@ -6,7 +6,9 @@ div{
   padding: 1rem;
   text-align: center;
 }
-
+img {
+  border-style: solid;
+}
 p{
     text-align: center;
 

@@ -52,8 +52,8 @@ export class WorldCupMatchesService {
   deleteMatch = (id:number): Observable<void> => {
     return this.httpClient.delete<void>(this.backendURL + "/Matches/"+id);
   }
-  getFocusedMatch= ():Observable<WorldCupMatchInfo[]> => {
-    return this.httpClient.get<WorldCupMatchInfo[]>(this.backendURL + "/Matches/"+this.eventIDUsing);
+  getFocusedMatch= ():Observable<WorldCupMatchInfo> => {
+    return this.httpClient.get<WorldCupMatchInfo>(this.backendURL + "/Matches/"+this.eventIDUsing);
   }
   eventIDUsing=1;
   

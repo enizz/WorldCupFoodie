@@ -9,6 +9,7 @@ import { DropdownFilterPipe } from './filters/dropdown-filter.pipe';
 import { WordCupMatchesComponent } from './word-cup-matches/word-cup-matches.component';
 import { MatchChosenComponent } from './match-chosen/match-chosen.component';
 import { GrocerylistComponent } from './grocerylist/grocerylist.component';
+import { AddDishComponent } from './add-dish/add-dish.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GrocerylistComponent } from './grocerylist/grocerylist.component';
     DropdownFilterPipe,
     WordCupMatchesComponent,
     MatchChosenComponent,
-    GrocerylistComponent
+    GrocerylistComponent,
+    AddDishComponent
   ],
   imports: [
     BrowserModule,

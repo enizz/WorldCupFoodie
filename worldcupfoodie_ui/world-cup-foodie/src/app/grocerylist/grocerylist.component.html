@@ -1,3 +1,21 @@
+
+<app-match-chosen>  </app-match-chosen>
+     <hr>
+    <h2 class="d-flex justify-content-center">Final Grocery List</h2>
+
+     <div name="final-list"class="d-flex justify-content-center"*ngFor="let sI of selectedIngredients, index as i">
+      <li >{{i + 1}}: {{sI}}</li></div>
+     <hr>
+     <button>
+        <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
+          >Go Back to World Cup Matches</a>
+                </button>
+
+<button>
+                <a [routerLink]="['/poc']" [routerLinkActive]="['link-active']"
+                >Go Back to Grocery List</a>
+                      </button>
+
 <div *ngFor="let sI of selectedIngredients; index as i" class="flex">
   <input type="checkbox" id="cbox2" value="second_checkbox" />
   <!-- <label for="cbox2">{{ i + 1 }} {{ sI }}</label> -->
@@ -10,3 +28,4 @@
     >Go Back to World Cup Matches</a
   >
 </button>
+
