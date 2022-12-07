@@ -1,8 +1,16 @@
 <app-match-chosen>  </app-match-chosen>
-     
-     <div *ngFor="let sI of selectedIngredients, index as i">{{i + 1}} {{sI}}</div>
+     <hr>
+    <h2 class="d-flex justify-content-center">Final Grocery List</h2>
+
+     <div name="final-list"class="d-flex justify-content-center"*ngFor="let sI of selectedIngredients, index as i">
+      <li >{{i + 1}}: {{sI}}</li></div>
      <hr>
      <button>
         <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
           >Go Back to World Cup Matches</a>
                 </button>
+
+<button>
+                <a [routerLink]="['/poc']" [routerLinkActive]="['link-active']"
+                >Go Back to Grocery List</a>
+                      </button>
