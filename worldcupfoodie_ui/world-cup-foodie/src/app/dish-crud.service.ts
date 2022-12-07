@@ -20,6 +20,16 @@ getFocusedDish= ( incomingDishId: number):Observable<WorldCupDish> => {
   return this.httpClient.get<WorldCupDish>(this.backendURL + "/Dishes/"+incomingDishId);
 }
 
+
+
+
+addNewOrder = (order: WorldCupDish): Observable<WorldCupDish> => {
+  return this.httpClient.post<WorldCupDish>(this.backendURL + "/Dishes", order);
+}
+
+deleteOrder = (id: number): Observable<void> => {
+  return this.httpClient.delete<void>(this.backendURL + "/Dishes/" + id);
+}
 eventBeingUsed(idEvent: number){
    
   this.dishID = idEvent;

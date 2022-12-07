@@ -19,9 +19,14 @@ export class AddDishComponent implements OnInit {
   ngOnInit(): void {
     this.service2.getFocusedMatch().subscribe((data:WorldCupMatchInfo)=>this.focusedMatch=data);
     this.dishcrudstuff.getAllDishes().subscribe((data:WorldCupDish[])=>this.allDishes=data);
-    this.dishcrudstuff.getFocusedDish(2).subscribe((data:WorldCupDish)=>this.focusedDish=data);
 
   }
 
-  
+  removeOrder = (id: number): void => {
+    this.dishcrudstuff.deleteOrder(id).subscribe(() => this.allDishes);
+  }
+
+  addOrder = (order: WorldCupDish): void => {
+    this.dishcrudstuff.addNewOrder(order).subscribe(() => this.allDishes);
+  }
 }
