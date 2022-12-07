@@ -3,6 +3,7 @@ import { DishCrudService } from '../dish-crud.service';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { WorldCupMatchesService } from '../world-cup-matches.service';
 import { WorldCupMatchInfo } from '../world-cup-match-info';
+import { WorldCupDish } from '../interface/world-cup-dish';
 
 @Component({
   selector: 'app-add-dish',
@@ -10,9 +11,7 @@ import { WorldCupMatchInfo } from '../world-cup-match-info';
   styleUrls: ['./add-dish.component.css']
 })
 export class AddDishComponent implements OnInit {
-addNewDish($event: Event) {
-throw new Error('Method not implemented.');
-}
+
 
   constructor(private dishcrudstuff: DishCrudService ,private router: Router,private service2:WorldCupMatchesService) { }
   focusedMatch = <WorldCupMatchInfo> {} as WorldCupMatchInfo;
@@ -22,5 +21,7 @@ throw new Error('Method not implemented.');
 
   }
 
-  
+  addDish = (newDish: WorldCupDish): void => {
+    this.dishcrudstuff.addNewDish(newDish);
+  }
 }

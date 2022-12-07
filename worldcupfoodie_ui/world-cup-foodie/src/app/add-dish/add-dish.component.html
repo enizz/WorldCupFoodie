@@ -2,10 +2,7 @@
 {{focusedMatch | json}}
 <h1>{{focusedMatch.team1}}</h1> -->
 
-<app-add-order-form (dishSave)="addNewDish($event)"></app-add-order-form>
-
-
-
+<app-add-test (dishSave)="addDish($event)"></app-add-test>
 <button>
 <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
 >Go Back to World Cup Matches</a>
