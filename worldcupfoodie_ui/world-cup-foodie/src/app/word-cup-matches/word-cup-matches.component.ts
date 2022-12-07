@@ -31,5 +31,8 @@ export class WordCupMatchesComponent implements OnInit {
     this.service.eventBeingUsed(id);
      this.router.navigate(['/poc/']); // route back to all tickets list
   }
-  
+  goToAddDish(id: number) {
+    this.service.eventBeingUsed(id);
+     this.router.navigate(['/add-dish/']); // route back to all tickets list
+  }
 }

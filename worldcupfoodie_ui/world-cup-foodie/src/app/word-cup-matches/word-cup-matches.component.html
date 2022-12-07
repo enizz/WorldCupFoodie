@@ -8,18 +8,27 @@
     </span>
    
     <div class="center-match-info">
-        <p>VS</p> 
+      
+      <button 
+      class="btn btn-primary"
+      (click)="goToAddDish(match.id)"
+    >
+
+     Add Dish
+    </button>
+      <p>VS</p> 
+        <button 
+        class="btn btn-primary"
+        (click)="goToEditMatch(match.id)"
+      >
+  
+        Create Grocery List
+      </button>
         <!-- <button>
         <a [routerLink]="['/poc']" [routerLinkActive]="['link-active']"
           >Create Grocery List</a>
                 </button>  -->
-                <button 
-                class="btn btn-primary"
-                (click)="goToEditMatch(match.id)"
-              >
-        
-                Create Grocery List
-              </button>
+               
                 <p>{{ match.matchDate | date }} </p>
 
             </div>
