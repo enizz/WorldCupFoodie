@@ -3,6 +3,7 @@ import { WorldCupMatchesService } from '../world-cup-matches.service';
 import { WorldCupMatchInfo } from '../world-cup-match-info';
 import { ReplaySubject } from 'rxjs';
 import { Router, RouterModule, Routes } from '@angular/router';
+import { WorldCupFoodieService } from '../world-cup-foodie.service';
 
 @Component({
   selector: 'app-word-cup-matches',
@@ -18,10 +19,11 @@ export class WordCupMatchesComponent implements OnInit {
   //   this.allMatches = this.worldCupMatches.getAllMatches();
 
   // }
-  constructor(private service: WorldCupMatchesService, private router: Router) { }
+  constructor(private service: WorldCupMatchesService, private router: Router,private service1: WorldCupFoodieService) { }
 
   ngOnInit(): void {
-  
+    this.service1.selectedIngredients=[];
+
   this.service.getAllMatches().subscribe((data:WorldCupMatchInfo[])=>this.allMatches=data);
 
   }
