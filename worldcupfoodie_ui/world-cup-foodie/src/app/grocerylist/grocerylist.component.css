@@ -1,8 +1,12 @@
-header{
-    color: white;
-    background-color: brown;
+.flex {
+  display: flex;
 }
-footer{
-    color: white;
-    background-color: brown;
+
+label {
+  font-size: 1.5em;
+}
+
+input[type=checkbox]:checked + label {
+  color:black;
+  text-decoration: line-through;
 }
