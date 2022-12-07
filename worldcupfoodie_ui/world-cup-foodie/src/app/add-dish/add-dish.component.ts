@@ -4,6 +4,7 @@ import { Router, RouterModule, Routes } from '@angular/router';
 import { WorldCupMatchesService } from '../world-cup-matches.service';
 import { WorldCupMatchInfo } from '../world-cup-match-info';
 import { WorldCupDish } from '../interface/world-cup-dish';
+import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 @Component({
   selector: 'app-add-dish',
   templateUrl: './add-dish.component.html',
@@ -14,11 +15,12 @@ export class AddDishComponent implements OnInit {
 
   constructor(private dishcrudstuff: DishCrudService ,private router: Router,private service2:WorldCupMatchesService) { }
   focusedMatch = <WorldCupMatchInfo> {} as WorldCupMatchInfo;
-  focusedDish = <WorldCupDish> {} as WorldCupDish;
+  focusedDish = <any> {} as any;
 
   ngOnInit(): void {
     this.service2.getFocusedMatch().subscribe((data:WorldCupMatchInfo)=>this.focusedMatch=data);
     this.dishcrudstuff.getAllDishes().subscribe((data:WorldCupDish[])=>this.allDishes=data);
+    this.dishcrudstuff.getFocusedDish(this.focusedMatch.id).subscribe((data:any)=>this.focusedDish=data);
 
   }
 

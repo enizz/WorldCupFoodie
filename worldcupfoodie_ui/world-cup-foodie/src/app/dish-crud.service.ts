@@ -17,7 +17,7 @@ export class DishCrudService {
 }
 
 getFocusedDish= ( incomingDishId: number):Observable<WorldCupDish> => {
-  return this.httpClient.get<WorldCupDish>(this.backendURL + "/Dishes/"+incomingDishId);
+  return this.httpClient.get<any>(this.backendURL + "/Dishes/"+incomingDishId);
 }
 
 
