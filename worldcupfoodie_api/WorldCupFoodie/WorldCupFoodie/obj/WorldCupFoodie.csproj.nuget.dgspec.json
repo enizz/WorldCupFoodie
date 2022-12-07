@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eugen\\source\\repos\\FSTEST\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj": {}
+    "C:\\Users\\eugen\\Desktop\\GC Project\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eugen\\source\\repos\\FSTEST\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj": {
+    "C:\\Users\\eugen\\Desktop\\GC Project\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eugen\\source\\repos\\FSTEST\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj",
+        "projectUniqueName": "C:\\Users\\eugen\\Desktop\\GC Project\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj",
         "projectName": "WorldCupFoodie",
-        "projectPath": "C:\\Users\\eugen\\source\\repos\\FSTEST\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj",
+        "projectPath": "C:\\Users\\eugen\\Desktop\\GC Project\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj",
         "packagesPath": "C:\\Users\\eugen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eugen\\source\\repos\\FSTEST\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\obj\\",
+        "outputPath": "C:\\Users\\eugen\\Desktop\\GC Project\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eugen\\AppData\\Roaming\\NuGet\\NuGet.Config",
