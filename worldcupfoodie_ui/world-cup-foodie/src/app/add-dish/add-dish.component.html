@@ -1,6 +1,10 @@
-<h1>DISH CRUD</h1>
+<!-- <h1>DISH CRUD</h1>
 {{focusedMatch | json}}
-<h1>{{focusedMatch.team1}}</h1>
+<h1>{{focusedMatch.team1}}</h1> -->
+
+<app-add-order-form (dishSave)="addNewDish($event)"></app-add-order-form>
+
+
 
 <button>
 <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
