@@ -9,7 +9,7 @@ import { WorldCupDish } from '../interface/world-cup-dish';
 export class AddTestComponent implements OnInit {
   @Output() dishSave = new EventEmitter<WorldCupDish>();
 
-  matchId: number = 1;
+  matchId: number = 0;
   dish1: string = '';
   description: string = '';
 
