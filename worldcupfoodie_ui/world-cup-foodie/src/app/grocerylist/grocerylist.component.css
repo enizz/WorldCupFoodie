@@ -1,8 +1,15 @@
-header{
-    color: white;
-    background-color: brown;
+
+div{
+    padding-top: 1rem;
 }
-footer{
-    color: white;
-    background-color: brown;
+.center-match-info{
+  padding: 1rem;
+  text-align: center;
+}
+img {
+  border-style: solid;
+}
+p{
+    text-align: center;
+
 }
