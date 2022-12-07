@@ -1,17 +1,7 @@
-<script src="/js/strikethrough.js"></script>
-<!-- <header>
-    <h1>WorldCupFoodie</h1>
-    </header>
-    test
-    <footer>
-        <p>WorldCupFoodie ⓒ</p>
-     </footer> -->
-
 <div *ngFor="let sI of selectedIngredients; index as i" class="flex">
-  <input type="checkbox" id="ckb1" value="1" onclick="my_fun(1);" /><span
-    id="my_span1"
-    >{{ i + 1 }} {{ sI }}</span
-  >
+  <input type="checkbox" id="cbox2" value="second_checkbox" />
+  <!-- <label for="cbox2">{{ i + 1 }} {{ sI }}</label> -->
+  <label for="cbox2">{{ sI }}</label>
 </div>
 
 <hr />
