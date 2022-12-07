@@ -1,8 +1,24 @@
+
+<app-match-chosen></app-match-chosen>
 <h1>DISH CRUD</h1>
-{{focusedMatch | json}}
+{{focusedDish | json}}
+<!-- 
 <h1>{{focusedMatch.team1}}</h1>
 
-<button>
+<div *ngFor="let dish of allDishes ">
+<p>{{dish.dish1}}</p>
+<p>{{dish.description}}</p>
+<p>{{dish.matchId}}</p>
+
+</div>  -->
+
+
+<p>{{focusedDish.id}}</p>
+
+<button   >
 <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
 >Go Back to World Cup Matches</a>
       </button>
+
+
+      
