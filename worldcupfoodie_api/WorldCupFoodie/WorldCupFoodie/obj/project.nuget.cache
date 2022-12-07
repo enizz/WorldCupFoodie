@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "V7TGHbim5o6P1go+oE6GNjjFHWDLM5LBv5FGopldZvb5m4MBqVv2wuq67XGNuZoF57VUHCYR4WHYLYzI1rxXgw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\eugen\\Desktop\\GrandCircus Final\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj",
+=======
   "dgSpecHash": "GXdRcRtdEvqpPfdQ67pbv9kyScfAlzJaZC8GDKb8/HycijmHhfN3QZmGO9q1vhsk2WBIF9ZAe5awCw+OsIbZZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\gustavor\\Documents\\grandcircus\\WorldCupFoodie\\WorldCupFoodie\\worldcupfoodie_api\\WorldCupFoodie\\WorldCupFoodie\\WorldCupFoodie.csproj",
+>>>>>>> main
   "expectedPackageFiles": [
     "C:\\Users\\gustavor\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\gustavor\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

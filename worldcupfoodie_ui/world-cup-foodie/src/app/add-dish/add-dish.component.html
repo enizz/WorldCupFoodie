@@ -1,4 +1,12 @@
 
+<!-- <h1>DISH CRUD</h1>
+{{focusedMatch | json}}
+<h1>{{focusedMatch.team1}}</h1> -->
+<app-match-chosen>  </app-match-chosen>
+<app-add-test (dishSave)="addDish($event)"></app-add-test>
+<button>
+
+
 <app-match-chosen></app-match-chosen>
 <!-- 
 <h1>DISH CRUD</h1>
@@ -54,6 +62,7 @@
   
 
 <button   >
+
 <a [routerLink]="['/world-cup-matches']" [routerLinkActive]="['link-active']"
 >Go Back to World Cup Matches</a>
       </button>
