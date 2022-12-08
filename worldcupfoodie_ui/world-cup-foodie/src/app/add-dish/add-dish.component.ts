@@ -40,8 +40,4 @@ export class AddDishComponent implements OnInit {
     this.dishcrudstuff.addNewOrder(order).subscribe(() => this.allDishes);
 
   }
-  addDish = (newDish: WorldCupDish): void => {
-    this.dishcrudstuff.addNewDish(newDish);
-  }
-
 }
