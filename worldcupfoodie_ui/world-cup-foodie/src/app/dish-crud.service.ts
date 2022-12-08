@@ -35,7 +35,8 @@ getFocusedDish= ( incomingDishId: number):Observable<WorldCupDish> => {
   return this.httpClient.get<any>(this.backendURL + "/Dishes/"+incomingDishId);
 }
 
-
+addNewDish = (dish: WorldCupDish): Observable<WorldCupDish> => {
+  return this.httpClient.post<WorldCupDish>(this.backendURL + "/Dishes/", dish)}
 
 
 addNewOrder = (order: WorldCupDish): Observable<WorldCupDish> => {

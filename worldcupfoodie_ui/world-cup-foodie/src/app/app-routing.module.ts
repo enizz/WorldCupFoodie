@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'grocerylist', component:GrocerylistComponent},
   {path:'add-test', component:AddTestComponent},
   {path:'add-dish', component:AddDishComponent},
-  
+
 
   {path:'',component:WordCupMatchesComponent,pathMatch:'full'}
 

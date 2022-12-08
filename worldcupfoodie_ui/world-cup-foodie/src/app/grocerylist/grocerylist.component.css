@@ -1,5 +1,4 @@
 
-
 div{
     padding-top: 1rem;
 }
@@ -10,10 +9,12 @@ div{
 img {
   border-style: solid;
 }
-p{
-    text-align: center;
 
+label {
+  font-size: 1.5em;
 }
+
+
 li{
     padding: 0;
     margin: 0;
@@ -30,8 +31,13 @@ label {
   font-size: 1.5em;
 }
 
+
 input[type=checkbox]:checked + label {
   color:black;
   text-decoration: line-through;
+}
+
+button{
+    margin-right:2rem; 
 }
 
