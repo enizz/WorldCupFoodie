@@ -10,6 +10,7 @@ import { WordCupMatchesComponent } from './word-cup-matches/word-cup-matches.com
 import { MatchChosenComponent } from './match-chosen/match-chosen.component';
 import { GrocerylistComponent } from './grocerylist/grocerylist.component';
 import { AddDishComponent } from './add-dish/add-dish.component';
+import { AddTestComponent } from './add-test/add-test.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AddDishComponent } from './add-dish/add-dish.component';
     WordCupMatchesComponent,
     MatchChosenComponent,
     GrocerylistComponent,
-    AddDishComponent
+    AddDishComponent,
+    AddTestComponent
   ],
   imports: [
     BrowserModule,
