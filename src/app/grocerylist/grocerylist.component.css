@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+}
+
+label {
+  font-size: 1.5em;
+}
+
+input[type=checkbox]:checked + label {
+  color:black;
+  text-decoration: line-through;
+}
