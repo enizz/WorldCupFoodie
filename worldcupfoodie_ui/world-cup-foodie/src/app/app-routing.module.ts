@@ -11,8 +11,9 @@ const routes: Routes = [
   {path:'world-cup-matches',component:WordCupMatchesComponent},
   {path:'match-chosen',component:WordCupMatchesComponent},
   {path:'grocerylist', component:GrocerylistComponent},
-  {path:'add-dish', component:AddDishComponent},
   {path:'add-test', component:AddTestComponent},
+  {path:'add-dish', component:AddDishComponent},
+
 
   {path:'',component:WordCupMatchesComponent,pathMatch:'full'}
 
